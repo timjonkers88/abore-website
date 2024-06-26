@@ -1,0 +1,835 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #333;
+///    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 0;
+}
+
+/* Header Stijlen */
+header {
+    width: 100%;
+    background: #C1ADE2; /* Updated background color */
+    display: flex;
+    justify-content: center; /* Centreert de container */
+    padding: 10px 20px; /* Padding boven, onder en aan de zijkanten */
+}
+
+header .container {
+    width: 100%;
+    max-width: 1440px; /* Maximaal 1440px breedte */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 126px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+}
+
+header nav ul li {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: #1D1840;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 22px;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+/* Hero Sectie */
+#hero {
+    width: 100%;
+    padding: 79px 20px; /* Padding boven, onder en aan de zijkanten */
+    background: #C1ADE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.hero-text {
+    font-family: 'Gloock', serif;
+    font-weight: 400;
+    line-height: 1;
+    color: #1D1840;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text1, .hero-text2, .hero-text3 {
+    font-size: 270px;
+}
+
+.hero-logo {
+    position: absolute; /* Changed to absolute to allow position adjustment */
+    width: 155px;  /* Adjusted size */
+    height: 213px;  /* Adjusted size */
+    vertical-align: middle;
+    background-color: #C1ADE2;
+    display: inline-block;
+    top: 0; /* Initial top position */
+    left: 0; /* Initial left position */
+}
+
+.logo-part {
+    position: absolute;
+    background: #1D1840;
+    transform: scale(0.5); /* Adjust scale factor */
+}
+
+.hero-description {
+    width: 453px;
+    padding: 10px;
+    position: absolute;
+    left: 579px;
+    top: 330px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #EFF0F6;
+    font-size: 37px;
+    font-family: 'Gloock', serif;
+    font-weight: 400;
+    line-height: 44.40px;
+    word-wrap: break-word;
+}
+
+.hero-button-container {
+    display: flex;
+    align-items: center;
+    margin-left: 337px; /* Space between text and button */
+    margin-top: 350px; /* Adjust this value to align with the text */
+    position: absolute;
+    top: 50%; /* Vertically center the button relative to the text */
+    transform: translateY(-50%);
+    left: calc(50% + 200px); /* Adjust the left position as needed */
+}
+
+.hero-button {
+    background: #F08503;
+    color: white;
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 10px 28.22px 14px 29px;
+    border-radius: 24px;
+    border: 1px solid #F08503;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background: #b94200;
+}
+
+/* Over Ons Sectie */
+}
+
+#about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.biodiversiteits-container {
+    width: 100%;
+    position: relative;
+    height: 900px;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(25, 25, 25, 0.9);
+    font-family: Inter;
+}
+
+.button-text {
+    position: relative;
+    text-decoration: underline;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.button-help-mee {
+    position: absolute;
+    top: 436px;
+    left: 1239px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.volgens-het-nationale {
+    margin: 0;
+}
+
+.volgens-het-nationale-container {
+    position: absolute;
+    top: 180px;
+    left: 730px;
+    line-height: 34px;
+    text-align: right;
+    display: inline-block;
+    width: 760px;
+}
+
+.text-biodiversiteit {
+    width: 1440px; /* Width set to 1440px */
+    position: absolute;
+    height: 241px;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(25, 25, 25, 0.9);
+    font-family: Inter;
+    right: 174.4px; /* 174.4px from the right */
+}
+
+.title-biodiversiteit {
+    position: absolute;
+    top: 600px;
+    left: 830px;
+    font-size: 38px;
+    line-height: 46px;
+    font-family: Gloock;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #191919;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    display: inline-block;
+    width: 421px;
+    height: 166px;
+}
+
+.biodiversiteits-container-child {
+    position: absolute;
+    top: 111px;
+    left: 250.4px;
+    width: 466px;
+    height: 689px;
+    object-fit: cover;
+}
+
+/* Over Ons Sectie reden */
+.button-text {
+    position: relative;
+    text-decoration: underline;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.button-lees-meer {
+    position: absolute;
+    top: 420px;
+    left: 253px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
+.deze-methoden-hebben {
+    margin: 0;
+}
+
+.deze-methoden-hebben-container {
+    position: absolute;
+    top: 0px;
+    left: 112px;
+    line-height: 34px;
+    text-align: left;
+    display: inline-block;
+    width: 700px;
+    height: 400px;
+}
+
+.text-reden {
+    position: absolute;
+    top: 298px;
+    left: 0px;
+    width: 417px;
+    height: 420px;
+}
+
+.title-reden {
+    position: absolute;
+    top: 75px;
+    left: 933px;
+    font-size: 38px;
+    line-height: 46px;
+    font-family: Gloock;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                #191919;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    display: inline-block;
+    width: 616px;
+    height: 204px;
+}
+
+.container-text-and-photo-child {
+    position: absolute;
+    top: 298px;
+    left: 812px;
+    width: 730px;
+    height: 510x;
+    object-fit: cover;
+}
+
+.container-text-and-photo {
+    width: 100%;
+    position: relative;
+    height: 900px;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(25, 25, 25, 0.9);
+    font-family: Inter;
+    background: #E2E0FF
+}
+/* Over Ons Sectie voedselbossen als oplossing */
+.fotos-child {
+    position: absolute;
+    top: 270px;
+    left: -30px;
+    width: 730px;
+    height: 490px;
+    object-fit: cover;
+}
+
+.fotos {
+    position: absolute;
+    top: 50px;
+    left: 278px;
+    width: 1312px;
+    height: 490px;
+}
+
+.titel-herstel {
+    position: absolute;
+    top: -447px;
+    left: -58px;
+    line-height: 46px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #191919;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    width: 454px;
+    height: 197px;
+}
+
+.button-text {
+    position: relative;
+    text-decoration: underline;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.button-lees-meer-herstel{
+    position: absolute;
+    top: 132px;
+    left: 534px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
+.voedselbossen-herstellen-biodi {
+    position: absolute;
+    top: -266px;
+    left: 226px;
+    line-height: 34px;
+    text-align: right;
+    display: inline-block;
+    width: 418px;
+}
+
+.text-herstel {
+    position: absolute;
+    top: 20px;
+    left: 517px;
+    width: 651px;
+    height: 292px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Inter;
+}
+
+.tekst {
+    position: absolute;
+    top: 560px;
+    left: 374px;
+    width: 1067px;
+    height: 292px;
+}
+
+.container-tekst-en-fotos {
+    width: 100%;
+    position: relative;
+    height: 900px;
+    text-align: left;
+    font-size: 38px;
+    color: rgba(25, 25, 25, 0.9);
+    font-family: Gloock;
+}
+
+.footer-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #c1ade2;
+    width: 100%;
+    height: 400px;
+    z-index: -1; /* Ensure the background is behind other elements */
+}
+
+.path61254-0-1-6-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 202px;
+    height: 110px;
+    mix-blend-mode: normal;
+}
+
+.waar-smaak-natuurlijk {
+    position: absolute;
+    top: 97px;
+    left: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 202px;
+    height: 0px;
+    justify-content: right; /* right-align the text */
+}
+
+.slogan-logo {
+    width: 320px;
+    position: relative;
+    left: -488px;
+    top: 80px;
+    height: 127px;
+    padding: 10px; /* Add padding inside the frame */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.logotype {
+    width: 100%;
+    position: relative;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 11.8px;
+    color: #1d1840;
+    font-family: Gloock;
+}
+
+.adres1, .boscheind-79, .aa-luyksgestel, .linkedin, .instagram {
+    position: absolute;
+    line-height: 22px;
+    font-family: 'Inter', sans-serif;
+}
+
+.adres1 {
+    top: 0px;
+    left: 0px;
+    font-weight: 700;
+}
+
+.boscheind-79 {
+    top: 48px;
+    left: 0px;
+}
+
+.aa-luyksgestel {
+    top: 83px;
+    left: 0px;
+}
+
+.adres {
+    position: absolute;
+    top: 97.5px;
+    left: 1073px;
+    width: 200px;
+    height: 105px;
+}
+
+.linkedin, .instagram {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.linkedin {
+    top: 48px;
+    left: 0px;
+}
+
+.instagram {
+    top: 83px;
+    left: 0px;
+}
+
+.volg-ons {
+    position: absolute;
+    top: 97.5px;
+    left: 892px;
+    width: 95px;
+    height: 105px;
+}
+
+.contact {
+    position: absolute;
+    top: 97.5px;
+    left: 1342px;
+    width: 212px;
+    height: 105px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    background-color: #c1ade2;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    color: #1d1840;
+    font-family: 'Inter', sans-serif;
+}
+
+
+@media (min-width: 768px) {
+    #hero {
+        padding: 110px 20px;
+    }
+
+    #hero h1 {
+        font-size: 3em;
+    }
+
+    #hero p {
+        font-size: 1.5em;
+    }
+
+    #hero .btn {
+        font-size: 1.2em;
+        padding: 15px 30px;
+    }
+
+    #about h2 {
+        font-size: 2.5em;
+    }
+
+    #about p {
+        font-size: 1.2em;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    footer ul li {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero {
+        padding: 80px 20px;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    #hero .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    #about h2 {
+        font-size: 1.8em;
+    }
+
+    #about p {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Nieuwe Pagina's CSS */
+.content-loading-page {
+    width: 100%;
+    position: relative;
+    height: 1103.8px;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Porter Sans Block';
+    overflow: hidden
+}
+
+.cross-diagonal-top-down-child {
+    position: absolute;
+    top: -131px;
+    left: -34.65px;
+    background-color: #02B67A;
+    width: 1520px;
+    height: 77.7px;
+    transform: rotate(55.9deg);
+    transform-origin: 0 0;
+}
+
+.creating, .creating-a-better, .creating-a-better1, .creating-a-betternew, .creatiting-a-better-short, .creati, .creating-a-better2, .creating-a-better3, .creating-a-better4, .creating-a-better5 {
+    position: absolute;
+    letter-spacing: -10px;
+    line-height: 22px;
+}
+
+.creating-a-better {
+    top: 472px;
+    left: 339.21px;
+    transform: rotate(55.9deg);
+    transform-origin: 0 0;
+}
+
+.creating-a-better1 {
+    top: -97px;
+    left: -48px;
+    transform: rotate(55.9deg);
+    transform-origin: 0 0;
+}
+
+.creating-a-betternew {
+    top: 1034px;
+    left: 717px;
+    transform: rotate(55.9deg);
+    transform-origin: 0 0;
+    white-space: nowrap;
+}
+
+.cross-diagonal-top-down {
+    position: absolute;
+    top: 0px;
+    left: 735px;
+    width: 761.6px;
+    height: 1320.1px;
+}
+
+.cross-diagonal-bottom-up-child {
+    position: absolute;
+    top: 544.43px;
+    left: -124px;
+    background-color: #02B67A;
+    width: 1354.2px;
+    height: 77.7px;
+    transform: rotate(-30.6deg);
+    transform-origin: 0 0;
+}
+
+.creatiting-a-better-short {
+    top: -48.76px;
+    left: 937.72px;
+    transform: rotate(-30.6deg);
+    transform-origin: 0 0;
+    white-space: nowrap;
+}
+
+.creati {
+    top: 296.24px;
+    left: 349.72px;
+    transform: rotate(-30.6deg);
+    transform-origin: 0 0;
+    white-space: nowrap;
+}
+
+.creating-a-better2 {
+    top: 655.24px;
+    left: -252.28px;
+    transform: rotate(-30.6deg);
+    transform-origin: 0 0;
+}
+
+.cross-diagonal-bottom-up {
+    position: absolute;
+    top: 569.45px;
+    left: 752.28px;
+    width: 829.9px;
+    height: 534.3px;
+}
+
+.frame-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #02B67A;
+    width: 1788.8px;
+    height: 78px;
+}
+
+.creating-a-better3 {
+    top: 28px;
+    left: 684px;
+}
+
+.creating-a-better4 {
+    top: 28px;
+    left: 0px;
+}
+
+.creating {
+    top: 28px;
+    left: 1370px;
+    white-space: nowrap;
+}
+
+.rectangle-parent {
+    position: absolute;
+    top: 879px;
+    left: 0px;
+    width: 1788.8px;
+    height: 78px;
+    overflow: hidden;
+}
+
+.rectangle-div {
+    left: 0px;
+    background-color: rgba(29, 24, 64, 0.75);
+}
+
+.subtitle-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #02B67A;
+    width: 418px;
+    height: 33px;
+}
+
+.creating-a-better5 {
+    top: 6px;
+    left: 8px;
+    letter-spacing: 0px;
+    white-space: nowrap;
+}
+
+.subtitle {
+    position: absolute;
+    top: 38px;
+    left: 0px;
+    width: 418px;
+    height: 33px;
+}
+
+.coming-soon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 46px;
+    line-height: 22px;
+    font-family: 'Glook';
+    color: #1d1840;
+    white-space: nowrap;
+}
+
+.title-page {
+    position: absolute;
+    top: 219px;
+    left: 201px;
+    width: 418px;
+    height: 71px;
+    font-size: 16px;
+}
